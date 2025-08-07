@@ -1,16 +1,15 @@
-k = 1
-def numbers(n):
-    global k
-    if k <=n:
-        print(k)
-        k+=1
-        numbers(n)
+count = 1
+def printN(N):
     
+    global count
+    if count<=N:
+        print(count)
+        count +=1
+        printN(N)
+
 def main():
-    print("Enter a number : ")
-    k = int(input())
-    
-    numbers(k)
-    
+    printN(4)
+
+
 if __name__ == '__main__':
     main()

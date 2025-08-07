@@ -1,16 +1,15 @@
-fact = 1
-
-def facto(n):
-    global fact
-    if n >= 1:
-        fact *= n
-        n = n-1
-        facto(n)
-    return  fact
-
-
+Fact = 1
+def Factorial(num):
+    
+    global Fact
+    if num>0:
+        Fact *=num
+        Factorial(num-1)
+        
+    return Fact
+        
 def main():
-    print(facto(5))
+    print(Factorial(5))
 
 if __name__ == '__main__':
     main()
